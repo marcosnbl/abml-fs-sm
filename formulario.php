@@ -5,10 +5,10 @@
             <div class="card card-body">
                 <form action = "save-data.php" method="POST">
                     <div class="form-group">
-                        <input type="text" name="Nombre" class="form-control" placeholder = "Nombre" autofocus>
+                        <input type="text" name="DNI" class="form-control" placeholder = "DNI" autofocus>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Apellido" class="form-control" placeholder = "Apellido" autofocus>
+                        <input type="text" name="Nombre" class="form-control" placeholder = "Nombre" autofocus>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Edad" class="form-control" placeholder = "Edad" autofocus>
