@@ -1,40 +1,23 @@
-<?php  include("db.php")?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ABML Full Stack Silicon Misiones</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <!-- FONT AWESOEM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+<body>
+    
+    <?php 
+        include("db.php");
+        include("header.php");
+        include("formulario.php");
+        include("footer.php");
+    ?>
 
-<?php include("header.php")?>
+</body>
 
-<div class="container p-4">
-    <div class="row">
-        <div class="col-md-8">
-        
-            <div class="card card-body">
-                <form action = "save-data.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="Nombre" class="form-control" placeholder = "Nombre" autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="Apellido" class="form-control" placeholder = "Apellido" autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="Edad" class="form-control" placeholder = "Edad" autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="Email" class="form-control" placeholder = "Correo Electronico" autofocus>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="Curso" class="form-control" placeholder = "Curso" autofocus>
-                    </div>
-                    
-                    <input type="submit" name="save-data" class="btn btn-success btn-block" value="Guardar datos">
-                </form>
-            </div>
-
-        </div>
-        <div class="col-md-8">
-
-
-        </div>
-
-    </div>
-</div>
-
-<?php include('footer.php')?>
+</html>
