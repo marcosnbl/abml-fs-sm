@@ -8,7 +8,7 @@
                         <input type="text" name="DNI" class="form-control" placeholder = "DNI" autofocus>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Nombre" class="form-control" placeholder = "Nombre" autofocus>
+                        <input type="text" name="Nombre" class="form-control" placeholder = "Nombre y Apellido" autofocus>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Edad" class="form-control" placeholder = "Edad" autofocus>
