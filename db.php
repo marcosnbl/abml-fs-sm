@@ -6,7 +6,7 @@ $conexion = mysqli_connect(
     'localhost',
     'root',
     '',
-    'abml-fs'
+    'abml-fs-sm'
 );
 
 ?>

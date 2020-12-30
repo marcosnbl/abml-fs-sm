@@ -3,14 +3,13 @@
 include('db.php');
 
 if (isset($_POST['save-data'])){
-    $dni = $_POST['DNI'];
-    $nombre = $_POST['Nombre'];
-    $edad = $_POST['Edad'];
-    $email = $_POST['Email'];
-    $curso = $_POST['Curso'];
+    $nombre = $_POST['nombre'];
+    $dni = $_POST['dni'];
+    $email = $_POST['email'];
+    $curso = $_POST['curso'];
 
     
-    $query = "INSERT INTO datos(DNI, Nombre, Edad, Email, Curso) VALUES ('$dni', '$nombre','$edad', '$email', '$curso')";
+    $query = "INSERT INTO alumnos (nombre,dni, email, curso) VALUES ('$nombre','$dni', '$email', '$curso')";
     $resultado = mysqli_query($conexion, $query);
     if(!$resultado) {
         die("Consulta Fallida.");

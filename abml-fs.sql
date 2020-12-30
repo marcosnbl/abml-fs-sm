@@ -24,34 +24,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `datos`
+-- Estructura de tabla para la tabla `alumnos`
 --
 
-CREATE TABLE `datos` (
-  `dni` int(15) NOT NULL,
-  `nombre` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `edad` int(2) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `curso` varchar(255) NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `datos`
---
-
-INSERT INTO `datos` (`dni`, `nombre`, `edad`, `email`, `curso`, `fecha`) VALUES
-(41612710, 'Matias Aquino Gerega', 22, 'Test@test.com', 'Full Stack', '2020-12-29 20:04:04');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `datos`
---
-ALTER TABLE `datos`
-  ADD PRIMARY KEY (`dni`);
+CREATE TABLE `abml-fs-sm`.`alumnos` ( 
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `curso` VARCHAR(255) NOT NULL , 
+  `nombre` VARCHAR(255) NOT NULL , 
+  `email` VARCHAR(255) NOT NULL , 
+  `dni` VARCHAR(255) NOT NULL , 
+  `fecha_creacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+  PRIMARY KEY (`id`)) ENGINE = InnoDB;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
