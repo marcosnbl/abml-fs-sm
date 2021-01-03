@@ -13,10 +13,11 @@ if (isset($_POST['save-data'])){
     $resultado = mysqli_query($conexion, $query);
     if(!$resultado) {
         die("Consulta Fallida.");
-      }
+    }
 
     $_SESSION['mensaje'] = 'Suscripción realizada.';
-    $_SESSION['mensaje'] = 'blue';
+    $_SESSION['tipo_de_mensaje'] = 'success';
+
     header('Location: index.php');
 }
 
