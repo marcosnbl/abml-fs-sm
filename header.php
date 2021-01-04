@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>ABML Full Stack Silicon Misiones</title>
+    <title>ABML Full Stack Silicon Misiones.</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- BOOTSTRAP 4 -->
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.php">ABML Full Stack Silicon Misiones</a>
+        <a class="navbar-brand" href="index.php">ABML Full Stack Silicon Misiones.</a>
       </div>
       <a href="formulario.php?" class="">
         <button type="button" class="btn btn-secondary">Agregar +</button>

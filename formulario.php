@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.php">ABML Full Stack Silicon Misiones</a>
+        <a class="navbar-brand" href="index.php">ABML Full Stack Silicon Misiones.</a>
       </div>
     </nav>
 
@@ -26,21 +26,21 @@
             <div class="card card-body">
                 <form action="save-data.php" method="POST">
                     <div class="form-group">
-                        <input type="text" name="nombre" class="form-control" placeholder = "Nombre y Apellido" autofocus>
+                        <input type="text" name="nombre" class="form-control" placeholder = "Nombre y Apellido." autofocus>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="dni" class="form-control" placeholder = "DNI" autofocus>
+                        <input type="text" name="dni" class="form-control" placeholder = "DNI." autofocus>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="email" class="form-control" placeholder = "Correo Electronico" autofocus>
+                        <input type="text" name="email" class="form-control" placeholder = "Correo Electronico." autofocus>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="curso" class="form-control" placeholder = "Curso al que se inscribe" autofocus>
+                        <input type="text" name="curso" class="form-control" placeholder = "Curso al que se inscribe." autofocus>
                     </div>
                     
-                    <input type="submit" name="save-data" class="btn btn-success btn-block" value="Guardar datos">
+                    <input type="submit" name="save-data" class="btn btn-success btn-block" value="Guardar datos.">
                     <a href="index.php?" class="">
-                        <input type="cancel" name="cancel" class="btn btn-danger btn-block" value="Cancelar">
+                        <input type="cancel" name="cancel" class="btn btn-danger btn-block" value="Cancelar.">
                     </a> 
                 </form>
             </div>
