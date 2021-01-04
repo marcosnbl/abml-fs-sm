@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("db.php");
 $nombre = '';
 $dni= '';
@@ -36,8 +38,8 @@ if (isset($_POST['update'])) {
     $query = "UPDATE alumnos set nombre ='$nombre', curso = '$curso',  email = '$email', dni = '$dni' 
     WHERE id=$id";
     mysqli_query($conexion, $query);
-    /// $_SESSION['mensaje'] = 'Actualizado correctamente.';
-    /// $_SESSION['tipo_de_mensaje'] = 'warning';
+    $_SESSION['mensaje'] = 'Actualizado correctamente.';
+    $_SESSION['tipo_de_mensaje'] = 'warning';
     header('Location: index.php');
 }
 
