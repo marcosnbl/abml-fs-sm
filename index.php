@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +16,7 @@
         include("db.php");
         include("header.php");
         include("formulario.php");
+        include("lista.php");
         include("footer.php");
     ?>
 
