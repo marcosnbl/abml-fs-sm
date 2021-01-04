@@ -41,7 +41,7 @@
             <th>Correo Electronico</th>
             <th>Curso</th>
             <th>Fecha de Suscripción</th>
-            <th>Agregar - Eliminar</th>
+            <th>Agregar -Editar- Eliminar</th>
           </tr>
         </thead>
         <tbody>

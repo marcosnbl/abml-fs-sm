@@ -33,11 +33,12 @@ if (isset($_POST['update'])) {
     echo $email;
     echo $curso; 
 
-    $query = "UPDATE alumnos set nombre = curso = '$curso', '$nombre', email = '$email', dni = '$dni',  WHERE id=$id";
+    $query = "UPDATE alumnos set nombre ='$nombre', curso = '$curso',  email = '$email', dni = '$dni' 
+    WHERE id=$id";
     mysqli_query($conexion, $query);
     /// $_SESSION['mensaje'] = 'Actualizado correctamente.';
     /// $_SESSION['tipo_de_mensaje'] = 'warning';
-    header('Location: edit-data.php');
+    header('Location: index.php');
 }
 
 ?>
@@ -46,23 +47,23 @@ if (isset($_POST['update'])) {
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="edit-data.php?id=<?php echo $_GET['id']; ?> "method="POST">
-        <div class="form-group">
-          <input name="nombre" type="text" class="form-control" value="<?php echo $nombre; ?>" placeholder="Actualizar Nombre">
-        </div>
-        <div class="form-group">
-          <input name="dni" type="text" class="form-control" value="<?php echo $dni; ?>" placeholder="Actualizar DNI">
-        </div>
-        <div class="form-group">
-          <input name="email" type="text" class="form-control" value="<?php echo $email; ?>" placeholder="Actualizar Correo Electronico">
-        </div>
-        <div class="form-group">
-          <input name="curso" type="text" class="form-control" value="<?php echo $curso; ?>" placeholder="Actualizar Curso">
-        </div>
-        <button class="btn-success" name="update">
-          Actualizar
-        </button>
-      </form>
+        <form action="edit-data.php?id=<?php echo $_GET['id'] ?>" method="POST">
+          <div class="form-group">
+            <input name="nombre" type="text" class="form-control" value="<?php echo $nombre; ?>" placeholder="Actualizar Nombre">
+          </div>
+          <div class="form-group">
+            <input name="dni" type="text" class="form-control" value="<?php echo $dni; ?>" placeholder="Actualizar DNI">
+          </div>
+          <div class="form-group">
+            <input name="email" type="text" class="form-control" value="<?php echo $email; ?>" placeholder="Actualizar Correo Electronico">
+          </div>
+          <div class="form-group">
+            <input name="curso" type="text" class="form-control" value="<?php echo $curso; ?>" placeholder="Actualizar Curso">
+          </div>
+          <button class="btn-success" name="update">
+            Actualizar
+          </button>
+        </form>
       </div>
     </div>
   </div>
