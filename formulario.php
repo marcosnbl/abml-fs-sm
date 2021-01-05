@@ -39,6 +39,7 @@
                     </div>
                     
                     <input type="submit" name="save-data" class="btn btn-success btn-block" value="Guardar datos.">
+                    </br>
                     <a href="index.php?" class="">
                         <input type="cancel" name="cancel" class="btn btn-danger btn-block" value="Cancelar.">
                     </a> 
